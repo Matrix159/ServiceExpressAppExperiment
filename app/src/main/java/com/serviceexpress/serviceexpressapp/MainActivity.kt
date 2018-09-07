@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // Access the companion object as it's statically bound to the interface
-        SEService.INSTANCE.listRepos("TestString")
+        //SEService.INSTANCE.listRepos("TestString")
 
         // Show an example using RxJava to show how it's easier with callbacks that way
     }
