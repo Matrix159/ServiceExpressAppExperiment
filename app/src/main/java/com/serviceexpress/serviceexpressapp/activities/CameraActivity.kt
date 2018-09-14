@@ -19,7 +19,7 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
         // Access the companion object as it's statically bound to the interface
-        //SEService.INSTANCE.listRepos("TestString")
+        //SEIService.INSTANCE.listRepos("TestString")
 
         // Show an example using RxJava to show how it's easier with callbacks that way
     }
