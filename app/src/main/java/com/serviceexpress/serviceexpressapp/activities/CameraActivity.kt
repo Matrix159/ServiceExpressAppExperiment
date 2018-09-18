@@ -40,11 +40,11 @@ class CameraActivity : AppCompatActivity() {
         detector.detectInImage(image)
                 .addOnSuccessListener {
                     if (it.isEmpty()) {
-                        content.text = "No barcode found"
+                        barcode.text = "No barcode found"
                         return@addOnSuccessListener
                     }
                     for (firebaseBarcode in it) {
-                        content.text = firebaseBarcode.displayValue //Display contents inside the barcode
+                        barcode.text = firebaseBarcode.displayValue //Display contents inside the barcode
                         //sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
                     }
                 }

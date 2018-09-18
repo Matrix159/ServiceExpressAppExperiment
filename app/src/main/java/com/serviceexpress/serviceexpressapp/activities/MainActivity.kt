@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             beginSearch(wikiText.text.toString())
         }
         cameraButton.setOnClickListener {
-            val intent = Intent(this, CameraActivity::class.java)
+            val intent = Intent(this, TestActivity::class.java)
             startActivity(intent)
         }
     }
